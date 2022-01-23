@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de Seguros</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="content-container">
+            <header class="header">
+                <h1>COTIZADOR DE SEGUROS</h1>
+            </header>
+            <div class="form-container">
+                <form action="submit" id="formulario">
+                    <div class="select-container">
+                        <div class="label-container"><label class="label-principal" for="marca">Marca:</label></div>
+                        <select name="marca" id="marca">
+                            <option value="">- Seleccionar -</option>
+                            <option value="1">- americano -</option>
+                            <option value="2">- asiatico -</option>
+                            <option value="3">- europeo -</option>
+                        </select>
+                    </div>
+                    <div class="select-container">
+                        <div class="label-container"><label class="label-principal" for="year">Año:</label></div>
+                        <select name="year" id="year"></select>
+                    </div>
+                    <fieldset class="typeCheck-container">
+                        <legend>Tipo Seguro</legend>
+                        <div class="checks">
+                            <div>
+                                <label >Básico</label>
+                                <input type="radio" name="tipo" value="basico" checked>
+                            </div>
+                            <div>
+                                <label >Completo</label>
+                                <input type="radio" name="tipo" value="completo">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="spinner" class="sk-circle hidden">
+                        <div class="sk-circle1 sk-child"></div>
+                        <div class="sk-circle2 sk-child"></div>
+                        <div class="sk-circle3 sk-child"></div>
+                        <div class="sk-circle4 sk-child"></div>
+                        <div class="sk-circle5 sk-child"></div>
+                        <div class="sk-circle6 sk-child"></div>
+                        <div class="sk-circle7 sk-child"></div>
+                        <div class="sk-circle8 sk-child"></div>
+                        <div class="sk-circle9 sk-child"></div>
+                        <div class="sk-circle10 sk-child"></div>
+                        <div class="sk-circle11 sk-child"></div>
+                        <div class="sk-circle12 sk-child"></div>
+                    </div>
+                    <div id="resultado" class="resultado"></div>
+                    <div id="button-submit" class="button-container">
+                        <button id="btn-submit" type="submit" class="button">Cotizar Seguro</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
